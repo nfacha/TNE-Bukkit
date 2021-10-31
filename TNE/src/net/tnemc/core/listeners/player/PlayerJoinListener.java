@@ -77,13 +77,13 @@ public class PlayerJoinListener implements Listener {
 
       TNE.manager().addAccount(account);
       if(first) {
-        if(TNE.configurations().hasConfiguration("Core.Server.KeepItems") && TNE.configurations().getBoolean("Core.Server.KeepItems")) {
+        /*if(TNE.configurations().hasConfiguration("Core.Server.KeepItems") && TNE.configurations().getBoolean("Core.Server.KeepItems")) {
           TNE.manager().currencyManager().getWorldCurrencies(world).forEach((currency) -> {
             if (currency.isItem()) {
               account.setHoldings(account.getHoldings(world, currency), currency, world);
             }
           });
-        }
+        }*/
         account.initializeHoldings(world);
       }
       if(TNE.instance().api().getBoolean("Core.Update.Notify") && player.hasPermission("tne.admin") && !TNE.instance().updater.getRelease().equals(ReleaseType.LATEST)) {
@@ -128,7 +128,7 @@ public class PlayerJoinListener implements Listener {
         if(MISCUtils.isOneFourteen()) {
           for(final Player p : Bukkit.getOnlinePlayers()) {
             Bukkit.getScheduler().runTask(plugin, ()->{
-              p.sendMessage(ChatColor.DARK_GREEN + "Quickly, hide the villager! The slave queen is here.");
+              p.sendMessage(ChatColor.DARK_GREEN + "Quickly, hide the villagers! The slave queen is here.");
               p.playSound(p.getLocation(), Sound.BLOCK_BELL_USE, 10f, 1f);
               p.playSound(p.getLocation(), Sound.ENTITY_VILLAGER_DEATH, 10f, 1f);
             });

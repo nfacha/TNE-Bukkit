@@ -3,8 +3,8 @@ package net.tnemc.core.common.transaction.type;
 import net.tnemc.core.TNE;
 import net.tnemc.core.common.transaction.TransactionAffected;
 import net.tnemc.core.common.transaction.result.TransactionResult;
-import net.tnemc.core.common.transaction.tax.TaxEntry;
-import net.tnemc.core.common.transaction.tax.type.FlatType;
+import net.tnemc.core.common.transrevamp.tax.TaxEntry;
+import net.tnemc.core.common.transrevamp.tax.type.FlatType;
 
 import java.math.BigDecimal;
 import java.util.HashMap;

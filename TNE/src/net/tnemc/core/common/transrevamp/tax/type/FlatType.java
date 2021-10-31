@@ -1,7 +1,7 @@
-package net.tnemc.core.common.transaction.tax.type;
+package net.tnemc.core.common.transrevamp.tax.type;
 
 
-import net.tnemc.core.common.transaction.tax.TaxType;
+import net.tnemc.core.common.transrevamp.tax.TaxType;
 
 import java.math.BigDecimal;
 
@@ -12,7 +12,7 @@ public class FlatType implements TaxType {
   }
 
   @Override
-  public BigDecimal handleTaxation(BigDecimal amount, BigDecimal tax) {
+  public BigDecimal calculate(BigDecimal amount, BigDecimal tax) {
     return amount.add(tax);
   }
 }

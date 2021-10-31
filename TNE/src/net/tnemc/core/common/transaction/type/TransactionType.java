@@ -7,7 +7,7 @@ import net.tnemc.core.common.transaction.TransactionAffected;
 import net.tnemc.core.common.transaction.charge.TransactionCharge;
 import net.tnemc.core.common.transaction.charge.TransactionChargeType;
 import net.tnemc.core.common.transaction.result.TransactionResult;
-import net.tnemc.core.common.transaction.tax.TaxEntry;
+import net.tnemc.core.common.transrevamp.tax.TaxEntry;
 
 import java.math.BigDecimal;
 import java.util.Map;
