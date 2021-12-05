@@ -40,6 +40,7 @@ import net.tnemc.core.common.uuid.impl.AshconAPI;
 import net.tnemc.core.compatibility.ItemCompatibility;
 import net.tnemc.core.compatibility.item.ItemCompatibility12;
 import net.tnemc.core.compatibility.item.ItemCompatibility13;
+import net.tnemc.core.compatibility.item.ItemCompatibility18;
 import net.tnemc.core.compatibility.item.ItemCompatibility7;
 import net.tnemc.core.event.module.TNEModuleLoadEvent;
 import net.tnemc.core.event.module.TNEModuleUnloadEvent;
@@ -340,6 +341,17 @@ public class TNE extends TNELib implements TabCompleter {
       final CommentedConfiguration penny = new CommentedConfiguration(new File(tiersDirectory, "penny.yml"), new InputStreamReader(this.getResource("currency/USD/penny.yml"), StandardCharsets.UTF_8));
       penny.load();
 
+    }
+
+    //Initialize our compatibility classes.
+    if (MISCUtils.isOneThirteen()) {
+      itemCompatibility = new ItemCompatibility13();
+    } else if (MISCUtils.isOneSeven()) {
+      itemCompatibility = new ItemCompatibility7();
+    } else if (MISCUtils.isOneEighteen()) {
+      itemCompatibility = new ItemCompatibility18();
+    } else {
+      itemCompatibility = new ItemCompatibility12();
     }
 
     //Initialize our plugin's managers.
