@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.tnemc</groupId>
     <artifactId>TNE</artifactId>
@@ -114,7 +114,7 @@
     <repositories>
         <repository>
             <id>mcmmo-repo</id>
-            <url>http://maven.elmakers.com/repository</url>
+            <url>https://maven.elmakers.com/repository</url>
         </repository>
         <repository>
             <id>spigot-repo</id>
@@ -122,15 +122,15 @@
         </repository>
         <repository>
             <id>vault-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
+            <url>https://nexus.hc.to/content/repositories/pub_releases</url>
         </repository>
         <repository>
             <id>placeholderapi</id>
-            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
         <repository>
             <id>sk89q-repo</id>
-            <url>http://maven.sk89q.com/repo/</url>
+            <url>https://maven.sk89q.com/repo/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
@@ -194,7 +194,7 @@
         <dependency>
             <groupId>net.tnemc</groupId>
             <artifactId>TNCH-Bukkit</artifactId>
-            <version>0.1.16.2</version>
+            <version>0.1.16.3</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
